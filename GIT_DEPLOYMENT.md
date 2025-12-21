@@ -53,19 +53,15 @@ git commit -m "Initial commit: Tim Mason Pro Tools website"
    - Click "Create repository"
 
 3. **Copy the Repository URL**
-   - GitHub will show you commands, but you'll see a URL like:
-   - `https://github.com/yourusername/timmasonprotools.git`
-   - Copy this URL
+   - Your repository URL is: `https://github.com/nodrinksonthepiano/timmasonprotools.git`
 
 ## Step 6: Connect Local Repository to GitHub
 
 Back in Terminal, run:
 
 ```bash
-git remote add origin https://github.com/yourusername/timmasonprotools.git
+git remote add origin https://github.com/nodrinksonthepiano/timmasonprotools.git
 ```
-
-**Replace `yourusername/timmasonprotools` with your actual GitHub username and repo name!**
 
 ## Step 7: Push Code to GitHub
 
@@ -158,7 +154,7 @@ cd /Users/j/Dev/TimMasonProTools122125
 git init
 git add .
 git commit -m "Initial commit: Tim Mason Pro Tools website"
-git remote add origin https://github.com/yourusername/timmasonprotools.git
+git remote add origin https://github.com/nodrinksonthepiano/timmasonprotools.git
 git branch -M main
 git push -u origin main
 ```
