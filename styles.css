@@ -282,6 +282,21 @@ h2 {
     margin-top: 2rem;
 }
 
+/* Profile Picture */
+.profile-picture-container {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.profile-picture {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow-hover);
+    border: 4px solid var(--white);
+}
+
 /* Footer */
 footer {
     background-color: var(--text-color);
