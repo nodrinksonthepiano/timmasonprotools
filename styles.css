@@ -314,6 +314,19 @@ h2 {
     background-attachment: fixed;
 }
 
+/* Fix for mobile - background-attachment: fixed doesn't work well on mobile */
+@media (max-width: 768px) {
+    .about {
+        background-attachment: scroll;
+        min-height: 300px;
+    }
+    
+    .about::before {
+        background-attachment: scroll;
+        position: absolute;
+    }
+}
+
 .about::before {
     content: '';
     position: absolute;
