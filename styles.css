@@ -222,6 +222,15 @@ nav a:hover {
     font-size: 1.25rem;
     margin-bottom: 2rem;
     opacity: 0.95;
+    /* Subtle mist/glow effect with Matco colors - more visible */
+    text-shadow: 
+        0 0 22px rgba(255, 255, 255, 0.7),
+        0 0 18px rgba(255, 255, 255, 0.6),
+        0 0 14px rgba(26, 115, 232, 0.5),
+        0 0 10px rgba(26, 115, 232, 0.4),
+        0 0 6px rgba(234, 67, 53, 0.35),
+        0 0 4px rgba(255, 255, 255, 0.5),
+        1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .cta-buttons {
@@ -292,6 +301,15 @@ h2 {
     margin-bottom: 1.5rem;
     text-align: center;
     color: var(--text-color);
+    /* Subtle mist/glow effect with Matco colors - more visible */
+    text-shadow: 
+        0 0 25px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.7),
+        0 0 15px rgba(26, 115, 232, 0.6),
+        0 0 10px rgba(26, 115, 232, 0.5),
+        0 0 8px rgba(234, 67, 53, 0.4),
+        0 0 5px rgba(255, 255, 255, 0.6),
+        2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .section-subtitle,
@@ -300,6 +318,15 @@ h2 {
     color: var(--text-light);
     margin-bottom: 2rem;
     font-size: 1.1rem;
+    /* Subtle mist/glow effect with Matco colors - more visible */
+    text-shadow: 
+        0 0 22px rgba(255, 255, 255, 0.7),
+        0 0 18px rgba(255, 255, 255, 0.6),
+        0 0 14px rgba(26, 115, 232, 0.5),
+        0 0 10px rgba(26, 115, 232, 0.4),
+        0 0 6px rgba(234, 67, 53, 0.35),
+        0 0 4px rgba(255, 255, 255, 0.5),
+        1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* About Section */
@@ -308,7 +335,7 @@ h2 {
     position: relative;
     /* Latham, NY map as subtle background */
     background-image: url('lathammap.png');
-    background-size: 80%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -318,12 +345,12 @@ h2 {
 @media (max-width: 768px) {
     .about {
         background-attachment: scroll;
-        min-height: 300px;
     }
     
     .about::before {
         background-attachment: scroll;
         position: absolute;
+        background-size: cover;
     }
 }
 
@@ -334,12 +361,12 @@ h2 {
     left: 0;
     right: 0;
     bottom: 0;
-    /* Map at 7-8% opacity - very subtle */
+    /* Map at higher opacity for better visibility */
     background-image: url('lathammap.png');
-    background-size: 80%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.075;
+    opacity: 0.25;
     z-index: 0;
     pointer-events: none;
 }
@@ -362,11 +389,36 @@ h2 {
     z-index: 2;
 }
 
+.about h2 {
+    /* Subtle mist/glow effect with Matco colors - more visible */
+    text-shadow: 
+        /* Outer white/grey glow - largest, most transparent */
+        0 0 25px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.7),
+        /* Mid-layer Matco blue glow */
+        0 0 15px rgba(26, 115, 232, 0.6),
+        0 0 10px rgba(26, 115, 232, 0.5),
+        /* Inner Matco red glow - subtle */
+        0 0 8px rgba(234, 67, 53, 0.4),
+        0 0 5px rgba(255, 255, 255, 0.6),
+        /* Base dark shadow for depth */
+        2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
 .about p {
     max-width: 800px;
     margin: 0 auto 1rem;
     font-size: 1.1rem;
     color: var(--text-light);
+    /* Subtle mist/glow effect with Matco colors - more visible */
+    text-shadow: 
+        0 0 22px rgba(255, 255, 255, 0.7),
+        0 0 18px rgba(255, 255, 255, 0.6),
+        0 0 14px rgba(26, 115, 232, 0.5),
+        0 0 10px rgba(26, 115, 232, 0.4),
+        0 0 6px rgba(234, 67, 53, 0.35),
+        0 0 4px rgba(255, 255, 255, 0.5),
+        1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Contact Section */
@@ -403,6 +455,15 @@ h2 {
     font-weight: 600;
     margin-bottom: 0.75rem;
     color: var(--text-color);
+    /* Subtle mist/glow effect with Matco colors - more visible */
+    text-shadow: 
+        0 0 20px rgba(255, 255, 255, 0.7),
+        0 0 15px rgba(255, 255, 255, 0.6),
+        0 0 12px rgba(26, 115, 232, 0.5),
+        0 0 8px rgba(26, 115, 232, 0.4),
+        0 0 5px rgba(234, 67, 53, 0.35),
+        0 0 3px rgba(255, 255, 255, 0.5),
+        1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .contact-card a {
@@ -426,6 +487,15 @@ h2 {
 .contact-card p {
     color: var(--text-light);
     font-size: 0.95rem;
+    /* Subtle mist/glow effect with Matco colors - more visible */
+    text-shadow: 
+        0 0 18px rgba(255, 255, 255, 0.6),
+        0 0 14px rgba(255, 255, 255, 0.5),
+        0 0 10px rgba(26, 115, 232, 0.4),
+        0 0 7px rgba(26, 115, 232, 0.35),
+        0 0 4px rgba(234, 67, 53, 0.3),
+        0 0 3px rgba(255, 255, 255, 0.4),
+        1px 1px 3px rgba(0, 0, 0, 0.25);
 }
 
 .contact-note {
