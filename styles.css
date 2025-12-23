@@ -103,7 +103,6 @@ header {
     top: 0;
     z-index: 100;
     overflow-x: hidden;
-    position: relative;
 }
 
 header::before {
